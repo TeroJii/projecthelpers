@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Tero", "Jalkanen", , "tero.jalkanen@estimates.fi", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-4586-8378"))
-Description: Convenience function which aim to make common tasks, such as defining
+Description: Convenience functions which aim to make common tasks, such as defining
     the project data folder path, easier.
 License: GPL (>= 3)
 Encoding: UTF-8

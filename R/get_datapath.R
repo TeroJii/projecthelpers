@@ -2,6 +2,7 @@ get_datapath <- function(project_path = "", data_folder = "Data", use_dotenv = F
 
   stopifnot(is.character(project_path))
   stopifnot(is.character(data_folder))
+  stopifnot(is.logical(use_dotenv))
 
   user_profile <- Sys.getenv("USERPROFILE")
   if(use_dotenv){

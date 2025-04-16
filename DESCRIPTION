@@ -1,6 +1,6 @@
 Package: projecthelpers
 Title: Helper Functions for Project Work
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person("Tero", "Jalkanen", , "tero.jalkanen@estimates.fi", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-4586-8378"))

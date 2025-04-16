@@ -31,13 +31,51 @@ You can install the development version of projecthelpers from [GitHub](https://
 pak::pak("TeroJii/projecthelpers")
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+### Setting the project data folder path
+
+The package provides a function to get the path to the data folder in your project. This is useful when you want to load data files from a specific folder on your computer. You can use a `.env` file with the [{dotenv} package](https://github.com/gaborcsardi/dotenv) to set the path to the project folder, or you can specify the path directly in the function call.
+
+```r
+library(projecthelpers))
+## basic example code
+get_datapath(data_folder = "Data", use_dotenv = TRUE)
+```
+
+The structure of the `.env` file should be as follows:
+
+```bash
+# example of a OneDrive path
+PROJECT_PATH="MyCompany/Project1 - Documents/Development"
+
+```
+
+### Listing files in the project data folder
+
+You can also use the package to list all files in the project data folder. This is useful when you want to see what files are available in the folder.
 
 ```r
 library(projecthelpers)
-## basic example code
-get_datapath(data_folder = "Data", use_dotenv = TRUE)
+
+my_data <- get_datapath(data_folder = "Data", use_dotenv = TRUE)
+
+list_files(my_data)
+```
+
+You can now use the `subset_filetype()` function to filter the files by file type. For example, if you want to list all CSV files in the data folder, you can use the following code:
+
+```{r}
+library(projecthelpers)
+# example filenames in the data folder
+my_files <- c(
+  "file1.csv",
+  "file2.csv",
+  "file3.txt",
+  "file4.csv"
+)
+
+# List all CSV files in the data folder
+subset_filetype(my_files, extension = "csv")
 ```
 

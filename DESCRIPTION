@@ -1,9 +1,11 @@
 Package: projecthelpers
-Title: What the Package Does (One Line, Title Case)
+Title: Helper Functions for Project Work
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Tero", "Jalkanen", , "tero.jalkanen@estimates.fi", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4586-8378"))
+Description: Convenience function which aim to make common tasks, such as defining
+    the project data folder path, easier.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8

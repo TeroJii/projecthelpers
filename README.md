@@ -59,7 +59,7 @@ library(projecthelpers)
 
 my_data <- get_datapath(data_folder = "Data", use_dotenv = TRUE)
 
-list_files(my_data)
+my_files <- list_files(my_data)
 ```
 
 You can now use the `subset_filetype()` function to filter the files by
